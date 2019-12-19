@@ -30,4 +30,49 @@ const course = courses.find(function(course){
   return course.name === 'a';
 });
 //find method uses a function similiar to a callback with an element within the array.
-console.log(course);
+// console.log(course);
+
+const theseNumbers = [1,2,3,4];
+
+// const last = theseNumbers.pop();
+//pop method removes last element within the array.
+// console.log(theseNumbers);
+// console.log(last);
+
+// const beginning = theseNumbers.shift();
+//shift method removes last element within the array.
+// console.log(theseNumbers);
+
+theseNumbers.splice(2,2)
+//splice method removes starting the index, then how many elements from the index. 
+// console.log(theseNumbers);
+
+
+//Emptying an Array
+let myNumbers = [2,0,1,9];
+
+//solution #1
+// myNumbers =[];
+
+//solution #2
+// myNumbers.length = 0;
+
+//solution #3
+// myNumbers.splice(0, myNumbers.length);
+
+// solution #4 not optimal
+// while (myNumbers.length > 0)
+// myNumbers.pop();
+
+// console.log(myNumbers);
+
+//Combining Arrays
+const first = [1,2,3];
+const second = [4,5,6];
+
+// first.concat(second);
+
+//Spread Operator
+const combined =[...first, 8, ...second];
+console.log(combined);
+//spread operator get all element from the array thats is declared.
