@@ -76,3 +76,21 @@ const second = [4,5,6];
 const combined =[...first, 8, ...second];
 console.log(combined);
 //spread operator get all element from the array thats is declared.
+
+
+//LEFT OFF interating Array 
+let thisArray = ['elephant', 1, 2, '22'];
+// console.log(thisArray);
+
+function sumMix(arr){
+  let newArr = [];
+
+  for(i =0; i< arr.length; i++){
+    if(typeOf([i] === 'number')
+      newArr.push([i]);
+  }
+  return newArr
+}
+sumMix(thisArray);
+
+
