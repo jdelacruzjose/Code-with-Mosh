@@ -78,6 +78,15 @@ console.log(combined);
 //spread operator get all element from the array thats is declared.
 
 
+//map function example
+function maps(x){
+  return x.map((arr)=>{
+    return arr * 2;
+  })
+}
+
+maps([1,2,3]);
+
 //LEFT OFF interating Array 
 let thisArray = ['elephant', 1, 2, '22'];
 // console.log(thisArray);
