@@ -137,3 +137,32 @@ courses.sort((a,b)=>{
 });
 
 console.log(courses);
+
+  // 13- Testing the Elements of an Array
+// const number = [1,-1,2,3];
+
+// const allPositive = number.every((value)=>{
+//   return value >= 0;
+// });
+
+// const atLeastOnePositive = number.some((value)=>{
+//   return value >= 0;
+// });
+
+
+// console.log(allPositive);
+// console.log(atLeastOnePositive);
+
+  // 14- Filtering an Array
+const number = [1,-1,2,3];
+
+const filtered = number.filter((value)=>{
+  return value >= 0;
+});
+
+console.log(filtered);
+
+   //  15- Mapping an Array
+
+const items = filtered.map(n => ({ value: n}) );
+console.log(items)
