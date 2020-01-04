@@ -103,3 +103,37 @@ function sumMix(arr){
 sumMix(thisArray);
 
 
+// const numbers = [1,2,3];
+// const joined = numbers.join(',');
+// console.log(joined);
+
+// const message = 'This is my first meassage';
+
+// const parts = message.split(' ');
+// console.log(parts);
+
+// const combined = parts.join('-');
+// console.log(combined);
+
+// const numbers = [2,3,1];
+// numbers.sort();
+
+// numbers.reverse();
+// console.log(numbers);
+
+const courses = [
+  {id:1, name: 'Node.js'},
+  {id:2, name: 'javaScript'},
+];
+
+courses.sort((a,b)=>{
+  const nameA = a.name.toLowerCase(); // placeholder .obj property toLowerCase
+  const nameB = b.name.toLowerCase();
+
+  if(nameA <nameB) return -1;
+  if(nameA >nameB) return 1;
+  return 0;
+
+});
+
+console.log(courses);
