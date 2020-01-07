@@ -176,7 +176,7 @@ const sum = numbers.reduce((accumulator, currentValue)=>{
 });  
 
 console.log(sum);
-//Example to reduce an array and accumlate the total sum
+//Example to reduce an array and accumulate the total sum
 
 
 // 17- Exercise 1- Array from Range
@@ -184,7 +184,7 @@ console.log(sum);
   function arrayFromRange(min, max){ // Use two placeholders.
     const output = []; // Create a new array.
     for(let i = min; i <=max; i++){
-      output.push(i); // Forloop that pushes each index to a new array.
+      output.push(i); // For-loop that pushes each index to a new array.
     }
     return output; 
   }
