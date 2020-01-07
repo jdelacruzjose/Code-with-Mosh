@@ -87,7 +87,6 @@ function maps(x){
 
 maps([1,2,3]);
 
-//LEFT OFF interating Array 
 let thisArray = ['elephant', 1, 2, '22'];
 // console.log(thisArray);
 
