@@ -30,7 +30,6 @@ function addSum(){
 
 // console.log(addSum(2,3,4,3,3,3));
 
-
   // 4- The Rest Operator
 function Sum(discount, ...args){
   const total = args.reduce((a,b)=> a+b);
@@ -38,3 +37,53 @@ function Sum(discount, ...args){
 }
 
 console.log(Sum(0.1,32,41));
+
+  //  5- Default Parameters
+function interest(principal, rate, years){
+  return principal * rate/100 * years
+}
+
+console.log(interest(10000, 3.5, 5));
+
+
+  //  6- Getters and Setters
+const person = {
+  firstName: 'Jose',
+  lastName: 'De la Cruz',
+  get fullName(){
+    return `${person.firstName} ${person.lastName}`
+  },
+  set fullName(value){
+    const parts = value.split(' ');
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  }
+};
+
+person.fullName = 'Jhonny Cruz'
+
+console.log(person.fullName);
+
+  //  7- Try and Catch
+  const thePerson = {
+  firstName: 'Jose',
+  lastName: 'De la Cruz',
+
+  set fullName(value){
+    if(typeof value !== 'string');
+      throw new Error('Value is not a string.');
+
+    const parts = value.split(' ');
+    
+    if(parts.length !== 2)
+      throw new Error(' Enter a Fisrt and Last name')
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+    }
+  };
+  try {
+    thePerson.fullName = ' ';
+  }
+  catch(e){
+    alert(e);
+  }
